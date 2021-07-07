@@ -14,6 +14,7 @@ namespace ClassesExercise
             //Prit all data and call methods
             Console.WriteLine(toyota);
             toyota.Handle();
+            //toyota.MaxSpeed = 12.00M;
             Console.WriteLine(flyingCar);
             flyingCar.Fly();
             flyingCar.Land();
@@ -26,7 +27,7 @@ namespace ClassesExercise
     }
     public class Transport
     {
-        public decimal MaxSpeed { get; set; }
+        protected decimal MaxSpeed { get; set; }
         public int Capacity { get; set; }
 
         public override string ToString()
@@ -122,7 +123,6 @@ namespace ClassesExercise
     public class Boeing : AirTransport
     {
      
-
         public Boeing(decimal maxVel, int capacity, decimal maxHeight)
         {
             base.MaxSpeed = maxVel;
