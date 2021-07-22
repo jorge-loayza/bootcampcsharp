@@ -24,12 +24,6 @@ namespace LinqExcercise
         {
             return sequence.Select(selector).Median();
         }
-        public static int? Mode(this IEnumerable<int?> sequence)
-        {
-            var ordered = sequence.OrderBy(item => item);
-            int middlePosition = ordered.Count() / 2;
-            return ordered.ElementAt(middlePosition);
-        }
         public static int? Mode<T>(this IEnumerable<T> sequence, Func<T, int?> selector)
         {
 

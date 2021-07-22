@@ -25,7 +25,7 @@ namespace LinqExcercise
 
             Console.WriteLine($"Average: {people.Average(p => p.Price)}");
             Console.WriteLine($"Mode: {people.Mode(p => p.Price)}");
-            Console.WriteLine($"Madian: {people.Median(p => p.Price)}");
+            Console.WriteLine($"Median: {people.Median(p => p.Price)}");
             //The less commmon number
             Console.WriteLine($"UnMode: {people.UnMode(p => p.Price)}");
         }
