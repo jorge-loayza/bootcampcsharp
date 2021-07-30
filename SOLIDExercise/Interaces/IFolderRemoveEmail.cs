@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID
+namespace SOLIDExercise.Interaces
 {
-    class InvoicePrinter
+    interface IFolderRemoveEmail
     {
-        public void printInvoice()
-        {
-
-        }
+       
+        Email removeEmail(string emailId);
     }
-    
 }
