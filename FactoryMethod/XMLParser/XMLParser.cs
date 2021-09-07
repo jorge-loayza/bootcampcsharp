@@ -8,6 +8,6 @@ namespace FactoryMethod
 {
     interface XMLParser
     {
-        public abstract string parse();
+        public string parse();
     }
 }

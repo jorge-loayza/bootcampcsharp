@@ -20,7 +20,7 @@ namespace FactoryMethod
                 case ERROR_XMLPARSER:
                     return new ErrorXMLParser();
                 case ORDER_XMLPARSER:
-                    return new ErrorXMLParser();
+                    return new OrderXMLParser();
                 case RESPONSE_XMLPARSER:
                     return new ErrorXMLParser();
                 case FEEDBACK_XMLPARSER:
